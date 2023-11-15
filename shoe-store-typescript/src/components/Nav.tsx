@@ -16,7 +16,6 @@ const Nav:React.FC = () => {
                     <a href={i.href} className='font-montserrat leading-normal text-lg text-black underline'>{i.label}</a>
                   </li>
                 )
-                  
                 })
               }
             </ul>
