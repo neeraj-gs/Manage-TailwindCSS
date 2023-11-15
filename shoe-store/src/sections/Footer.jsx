@@ -1,6 +1,6 @@
 import { copyrightSign } from "../assets/icons";
-import { footerLogo } from "../assets/images";
-import { footerLinks, socialMedia } from "../constants";
+// import { footerLogo } from "../assets/images";
+import { footerLinks } from "../constants";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='flex flex-col items-start'>
           <a href='/'>
             <img
-              src={footerLogo}
+              src="/online-shop.png"
               alt='logo'
               width={150}
               height={46}
@@ -17,19 +17,21 @@ const Footer = () => {
             />
           </a>
           <p className='mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
-            Get shoes ready for the new term at your nearest Nike store. Find
-            Your perfect Size In Store. Get Rewards
+            Get your Shoe Addicts from mind to reality. Get the best customizable shoes form our store. Become more attractive.
           </p>
-          <div className='flex items-center gap-5 mt-8'>
+          {/* <div className='flex items-center gap-5 mt-8'>
             {socialMedia.map((icon) => (
               <div
                 className='flex justify-center items-center w-12 h-12 bg-white rounded-full'
                 key={icon.alt}
               >
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                  
               </div>
+              
             ))}
-          </div>
+            <FaGithub />
+          </div> */}
         </div>
 
         <div className='flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap'>
@@ -41,7 +43,7 @@ const Footer = () => {
               <ul>
                 {section.links.map((link) => (
                   <li
-                    className='mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray'
+                    className='mt-3  font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray'
                     key={link.name}
                   >
                     <a href={link.link}>{link.name}</a>
@@ -64,6 +66,7 @@ const Footer = () => {
           />
           <p>Copyright. All rights reserved.</p>
         </div>
+        <p className="mr-16">Created With 🧡 By NeerajGS</p>
         <p className='font-montserrat cursor-pointer'>Terms & Conditions</p>
       </div>
     </footer>

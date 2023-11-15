@@ -1,5 +1,6 @@
-import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
+import { instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+
 
 export const navLinks = [
     { href: "#home", label: "Home" },
@@ -90,12 +91,12 @@ export const footerLinks = [
     {
         title: "Products",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "Nike", link: "/" },
+            { name: "Puma", link: "/" },
+            { name: "Addidas", link: "/" },
+            { name: "Louis Vuitton", link: "/" },
+            { name: "Under Armour", link: "/" },
+            { name: "Reebok", link: "/" },
         ],
     },
     {
@@ -104,21 +105,20 @@ export const footerLinks = [
             { name: "About us", link: "/" },
             { name: "FAQs", link: "/" },
             { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
+
         ],
     },
     {
         title: "Get in touch",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "gsneeraj2002@gmail.com", link: "gsneeraj2002@gmail.com" },
+            { name: " Download SourceCode", link: "/https://github.com/neeraj-gs/ShoeBox-TailwindCSS" },
         ],
     },
 ];
 
 export const socialMedia = [
-    { src: facebook, alt: "facebook logo" },
-    { src: twitter, alt: "twitter logo" },
-    { src: instagram, alt: "instagram logo" },
+    { src: twitter, alt: "twitter logo",link:"/https://twitter.com/neeraj_gs_05" },
+    { src: instagram, alt: "instagram logo",link:"https://www.instagram.com/neeraj_gs/" },
+    // { src: <FaGithub />,alt:"github",link:"/https://github.com/neeraj-gs/ShoeBox-TailwindCSS"}
 ];
