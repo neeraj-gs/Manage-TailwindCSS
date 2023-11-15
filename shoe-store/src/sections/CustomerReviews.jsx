@@ -1,8 +1,8 @@
-
-
 const CustomerReviews = () => {
   return (
-    <div>CustomerReviews</div>
+    <section>
+      
+    </section>
   )
 }
 
