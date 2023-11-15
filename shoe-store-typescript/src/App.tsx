@@ -1,3 +1,4 @@
+import React from 'react'
 import Nav from './components/Nav'
 import {
   Footer,
@@ -8,7 +9,7 @@ import {
 } from './sections/index'
 
 
-const App = () => {
+const App:React.FC = () => {
   return (
     <main className="relative">
       <Nav />
