@@ -1,15 +1,22 @@
-const ShoeCard = ({imgURL,changeBigShoeImage,bigShoeImage}) => {
+interface ShoeCardProps {
+    imgURL: { thumbnail: string; bigShoe: string };
+    changeBigShoeImage: (shoe: { thumbnail: string; bigShoe: string }) => void;
+    bigShoeImage: { thumbnail: string; bigShoe: string };
+  }
+
+
+const ShoeCard:React.FC<ShoeCardProps> = ({imgURL,changeBigShoeImage,bigShoeImage}) => {
 
 const handleClick=()=>{
-    if(bigShoeImage!== imgURL.bigShoe){
-        changeBigShoeImage(imgURL.bigShoe)
+    if(bigShoeImage!== imgURL){
+        changeBigShoeImage(imgURL)
     }
 }
 
 
   return (
     <div className={`border-2 rounded-xl
-        ${bigShoeImage === imgURL.bigShoe
+        ${bigShoeImage === imgURL
             ? 'border-coral-red' : 'border-transparent'
         } cursor-pointer max-sm:flex-1 
     `}
