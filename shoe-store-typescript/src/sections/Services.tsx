@@ -6,7 +6,7 @@ const Services:React.FC = () => {
     <section className="max-container flex justify-center flex-wrap gap-9">
       {services.map((s)=>{
         return(
-          <ServiceCard key={s.label} imgURL={s.imageURL} label={s.label} subtext={s.subtext} />
+          <ServiceCard key={s.label} imageURL={s.imgURL} label={s.label} subtext={s.subtext} />
         )
       })}
     </section>
