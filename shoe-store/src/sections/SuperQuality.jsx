@@ -9,9 +9,9 @@ const SuperQuality = () => {
       <div className="flex flex-1 flex-col">
       {/* <p className="mt-20 text-xl font-montserrat text-coral-red">One Stop Solution to All Shoe Addicts</p> */}
         <h2 className="mt-10 font-palanquin text-4xl capitalize lg:max-w-lg font-bold">
-          We Provide you the  <br /> <span className="text-coral-red inline-block mt-3">Super Quality</span>  Shoes</h2>
+          We Provide   <br /> <span className="text-coral-red inline-block mt-3">Super Quality</span>  Shoes</h2>
           <p className="mt-4 lg:max-w-lg info-text">Ensuring the premium comformt and quality , get the best shoes and stay attractive in your community.</p>
-          <p className="mt-6 max-w-lg info-text">Our dedication to dfetail ensures one thing <span className="text-coral-red">Your Satisfaction</span> </p>
+          <p className="mt-6 max-w-lg info-text">Our dedication to detailing ensures only one thing <span className="text-coral-red">Customer Satisfaction</span> that is our top priority.</p>
           <div className="mt-11"><Button label="Shop now" iconURL={arrowRight}/></div>
           
 
