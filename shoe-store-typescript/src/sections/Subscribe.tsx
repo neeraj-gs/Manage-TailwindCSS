@@ -2,7 +2,7 @@ import { arrowRight } from "../assets/icons"
 import Button from "../components/Button"
 
 
-const Subscribe = () => {
+const Subscribe:React.FC = () => {
   return (
     <section
       id='contact-us'

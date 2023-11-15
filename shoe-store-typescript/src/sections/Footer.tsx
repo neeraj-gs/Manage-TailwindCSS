@@ -2,7 +2,7 @@ import { copyrightSign } from "../assets/icons";
 // import { footerLogo } from "../assets/images";
 import { footerLinks } from "../constants";
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <footer className='max-container'>
       <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
