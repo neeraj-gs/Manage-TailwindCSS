@@ -5,9 +5,9 @@ import { bigShoe1 } from "../assets/images"
 import ShoeCard from "../components/ShoeCard"
 import { useState } from "react"
 
-const Hero = () => {
+const Hero:React.FC = () => {
 
-  const [shoe,setShoe] = useState(bigShoe1)
+  const [shoe,setShoe] = useState<string>(bigShoe1)
 
 
   return (

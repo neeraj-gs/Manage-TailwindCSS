@@ -1,7 +1,7 @@
 import { hamburger } from '../assets/icons'
 import { navLinks } from '../constants/index'
 
-const Nav = () => {
+const Nav:React.FC = () => {
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
         <nav className='flex justify-between items-center max-container'> 
