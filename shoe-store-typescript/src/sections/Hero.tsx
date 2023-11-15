@@ -7,7 +7,13 @@ import { useState } from "react"
 
 const Hero:React.FC = () => {
 
-  const [shoe, setShoe] = useState<{ thumbnail: string; bigShoe: string }>(bigShoe1);
+  // const [shoe, setShoe] = useState<{ thumbnail: string; bigShoe: string }>(bigShoe1);
+  const [shoe, setShoe] = useState<{ thumbnail: string; bigShoe: string }>(() => ({
+    // @ts-expect-error as bigshoe is string
+    thumbnail: bigShoe1.thumbnail,
+    // @ts-expect-error as big shoe is string
+    bigShoe: bigShoe1.bigShoe,
+  }));
 
 
 
