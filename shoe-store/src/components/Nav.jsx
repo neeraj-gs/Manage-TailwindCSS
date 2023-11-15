@@ -1,4 +1,4 @@
-import hamburger from '../assets/icons/hamburger.svg'
+import { navLinks } from '../constants/index'
 
 const Nav = () => {
   return (
@@ -9,7 +9,15 @@ const Nav = () => {
             </a>
 
             <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
-              
+              {navLinks.map((i)=>{
+                return (
+                  <li key={i.label}>
+                    <a href={i.href} className='font-montserrat leading-normal text-lg text-slate-gray'>{i.label}</a>
+                  </li>
+                )
+                  
+                })
+              }
             </ul>
         </nav>
     </header>
