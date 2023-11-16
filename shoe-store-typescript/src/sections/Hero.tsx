@@ -1,19 +1,21 @@
 import Button from "../components/Button"
 import { arrowRight } from "../assets/icons"
 import { shoes, statistics } from "../constants"
-import { bigShoe1 } from "../assets/images"
+// import { bigShoe1 } from "../assets/images"
 import ShoeCard from "../components/ShoeCard"
 import { useState } from "react"
 
 const Hero:React.FC = () => {
 
   // const [shoe, setShoe] = useState<{ thumbnail: string; bigShoe: string }>(bigShoe1);
-  const [shoe, setShoe] = useState<{ thumbnail: string; bigShoe: string }>(() => ({
-    // @ts-expect-error as bigshoe is string
-    thumbnail: bigShoe1.thumbnail,
-    // @ts-expect-error as big shoe is string
-    bigShoe: bigShoe1.bigShoe,
-  }));
+  // const [shoe, setShoe] = useState<{ thumbnail: string; bigShoe: string }>(() => ({
+  //   // @ts-expect-error as bigshoe is string
+  //   thumbnail: bigShoe1.thumbnail,
+  //   // @ts-expect-error as big shoe is string
+  //   bigShoe: bigShoe1.bigShoe,
+  // }));
+  const [shoe, setShoe] = useState<{ thumbnail: string; bigShoe: string }>(shoes[0]); // Set the first shoe as default
+
 
 
 
@@ -47,10 +49,10 @@ const Hero:React.FC = () => {
             return(
               <div key={shoeItem.bigShoe}>
                 <ShoeCard 
-                  imgURL={shoe}
-                  changeBigShoeImage={(shoe)=>{setShoe(shoe)}}
-                  bigShoeImage={shoe}
-                />
+  imgURL={shoeItem}  // Pass the specific shoeItem object instead of the entire 'shoe'
+  changeBigShoeImage={(shoe) => { setShoe(shoe) }}
+  bigShoeImage={shoe}
+/>
               </div>
             )
           })}
