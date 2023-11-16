@@ -1,6 +1,14 @@
 import { star } from "../assets/icons"
 
-const PopularProductCard = ({imgURL,name,price}) => {
+
+interface PopularProductCardProps {
+  imgURL: string;
+  name: string;
+  price: string | number; // Adjust the type as needed
+}
+
+
+const PopularProductCard:React.FC<PopularProductCardProps> = ({imgURL,name,price}) => {
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
         <img src={imgURL} alt={name} className="w-[280px] h-[280px]" />
